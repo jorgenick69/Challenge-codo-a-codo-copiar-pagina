@@ -17,6 +17,7 @@ html{
     overflow: hidden;
     position: sticky;
     top: 0;
+    align-items: center;
 }
 .cabecero-iz{
     display: flex;
@@ -25,8 +26,8 @@ html{
     height: 100%;
 }
 .logo{
-    width: 30%;
-    min-width: 30%;
+    width: 90px;
+    
     margin-left: 2em;
 }
 .titulo-logo{
@@ -128,14 +129,15 @@ html{
     justify-content: center;
     width: 100%;
     min-height: 100%;
+    gap: 20px;
 }
 .card{
     display: flex;
     flex-direction: column;
     border: 1px solid #adabab;
-    width: 20%;
+    width: calc(60%/3);
     height: 80%;
-    margin: 2em;
+   
     border-radius: 0.4em;
     overflow: hidden;
 }
@@ -311,4 +313,159 @@ footer li{
 footer li:hover{
     font-weight: bold;
     border-bottom: 1px solid white;
+}
+
+
+@media(max-width:1024px){
+    .nav{
+      
+       height: auto;
+        
+        display: flex;
+        gap: 20px;
+        position: sticky;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+       align-content: center;
+       padding-top: 5px;
+       padding-bottom: 5px;
+    }
+    .cabecero-iz{
+        display: flex;
+        align-items: center;
+       width: auto;
+        height: 50%;
+    }
+    
+    
+    .lista{
+        width: auto;
+        display: flex;
+        justify-content: right !important;
+        font-size: medium;
+        align-items: center;
+        margin-right: 2em;
+        height: 50%;
+    }
+    .lista ul{
+        display: flex;
+        gap: 20px; flex-wrap: wrap;justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .encabezado{
+        width: 60%;
+        height: 50vh;
+        text-align: right;
+        margin-right: 6em;
+        color: white;
+    }
+    .contenido{
+        
+      width: 100%;
+      height: max-content !important;
+      
+    }
+    .tarjetas{
+        display: flex;
+       flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        min-height: 100%;
+        gap: 20px;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #adabab;
+        width: 240px;
+        height: 400px;
+       
+        border-radius: 0.4em;
+        overflow: hidden;
+    }
+    .formulario form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+        margin-top: 1em;
+    }
+    .formulario input{
+        width: calc(100% / 2.1);
+        height: 2.5em;
+        padding-left: 0.5em;
+        background: none;
+        border: 1px solid gainsboro;
+        border-radius: 0.4em;
+        outline: 0px;
+        margin-bottom: 1em;
+    }
+    .formulario input::placeholder{
+        font-size: larger;
+        padding-left: 1em;
+    }
+    .formulario textarea{
+        width: 98%;
+        height: 10em;
+        background: none;
+        border: 1px solid gainsboro;
+        border-radius: 0.4em;
+        outline: 0px;
+        margin-bottom: 1em;
+    }
+    .formulario textarea::placeholder{
+        font-size: xx-large;
+        padding-left: 1em;
+    }
+    .recuerda{
+        width: 98%;
+        display: flex;
+        justify-items: left;
+        color:#8a8a8a ;
+    }
+    .formulario p{
+       text-align: center;
+    }
+    .enviar{
+        width: 99% !important;
+        background-color:#96c93e !important ;
+        margin-top: 1em;
+        color: white;
+    }
+    .encabezado div{
+        width: 100% !important;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: right;
+    }
+    footer{
+        width: 100%;
+        height: auto;
+        background: linear-gradient(to right,#1b3745, #2273a5) ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    footer p{
+        color: white;
+    }
+    footer ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: white;
+    }
+    footer li{
+        margin: 1em;
+    }
+    footer li:hover{
+        font-weight: bold;
+        border-bottom: 1px solid white;
+    }
 }
